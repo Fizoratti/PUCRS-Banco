@@ -17,6 +17,7 @@ public class Main {
                 String nome = ler.next();
                 System.out.println("Digite sua idade: ");
                 int idade = ler.nextInt();
+                //
 
                 sistema.registrarCliente(new Cliente(nome, idade));
 
