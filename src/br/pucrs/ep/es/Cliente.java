@@ -3,6 +3,7 @@ package br.pucrs.ep.es;
 public class Cliente {
     private String nome;
     private int idade;
+    private Conta conta;
 
     public Cliente(String nome, int idade) {
         setNome(nome);
