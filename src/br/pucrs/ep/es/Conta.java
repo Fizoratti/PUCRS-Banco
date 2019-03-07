@@ -40,5 +40,7 @@ public class Conta {
         if(categoria == Categoria.Platinum) {
             this.valorizacao = 1.025;
         }
+
+        //oi
     }
 }
