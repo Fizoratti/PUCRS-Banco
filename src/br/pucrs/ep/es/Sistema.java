@@ -3,17 +3,32 @@ package br.pucrs.ep.es;
 import java.util.ArrayList;
 
 public class Sistema {
-    private ArrayList<Cliente> clientes;
+    private ArrayList<Fila> clientePrioritario;
+    private ArrayList<Fila> cliente;
 
     public Sistema(){
-        clientes = new ArrayList<Cliente>();
+        this.cliente = new ArrayList<Fila>();
+        this.clientePrioritario = new ArrayList<Fila>();
     }
 
-    public void registrarCliente(Cliente cliente){
-        clientes.add(cliente);
+    public void colocarClienteNaFila(Cliente cl, int pos){
+        Fila fila = new Fila(pos, cl);
+        if(cl.getIdade() >=65){
+            clientePrioritario.add(fila);
+        }else{
+            cliente.add(fila);
+        }
+
     }
 
-    public ArrayList<Cliente> listar(){
-        return new ArrayList<>(clientes);
+    public void atenderClienteNormal(){
+
+
+    }
+
+
+
+    public ArrayList<Fila> listar(){
+        return new ArrayList<>(cliente);
     }
 }
