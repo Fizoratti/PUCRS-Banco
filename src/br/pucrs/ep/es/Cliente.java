@@ -3,11 +3,12 @@ package br.pucrs.ep.es;
 public class Cliente {
     private String nome;
     private int idade;
-    private Conta conta;
+
 
     public Cliente(String nome, int idade) {
         setNome(nome);
         setIdade(idade);
+
     }
 
     public int getIdade() {
@@ -26,11 +27,13 @@ public class Cliente {
         this.nome = nome;
     }
 
+
+
+
     @Override
     public String toString() {
-        return "Cliente{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                '}';
+
+        String srt = getNome() +", "+getIdade()+ "anos, ";
+        return srt;
     }
 }

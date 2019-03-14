@@ -6,12 +6,17 @@ public class Main {
 
     public static void main(String[] args) {
         Sistema sistema = new Sistema();
-        int cont = 0;
+
         Scanner ler = new Scanner(System.in);
         int opc;
+        int dos;
+        double retirada, deposito;
+
         do {
             System.out.println("1 - Registrar Cliente");
             System.out.println("2 - Escolher caixa");
+            System.out.println("3 - Listar todos clientes já atendidos");
+            System.out.println("0 - sair");
             System.out.print("Digite sua opção: ");
 
             // Scanner ler = new Scanner(System.in);
@@ -29,8 +34,8 @@ public class Main {
                     sistema.colocarClienteNaFila(new Cliente(nome, idade));
 
                     System.out.println("Cliente registrado");
-                    System.out.println(sistema.listar());
-                    cont++;
+
+
                     break;
                 case 2:
                     System.out.println("Caixa 1, Caixa 2, Caixa 3, Caixa 4, Caixa 5, Caixa 6");
@@ -39,28 +44,61 @@ public class Main {
 
                    int caixa = ler.nextInt();
 
+                    if(caixa > 0 && caixa <7 ) {
+                        switch (caixa) {
+                            case 6:
+                                System.out.println("1 - Depositar");
+                                System.out.println("2 - Sacar");
+                                System.out.print("Digite sua opção: ");
+                                dos = ler.nextInt();
+                                switch (dos) {
+                                    case 1:
+                                        System.out.println("Digite o valor: ");
+                                        deposito = ler.nextDouble();
+                                        sistema.pegarCliente().getConta().depositar(deposito);
+                                        break;
+                                    case 2:
+                                        System.out.println("Digite o valor: ");
+                                        retirada = ler.nextDouble();
+                                        sistema.pegarCliente().getConta().retirada(retirada);
+                                        break;
+                                }
+                                sistema.removerCliente();
+                                break;
+                            default:
+                                System.out.println("1 - Depositar");
+                                System.out.println("2 - Sacar");
+                                System.out.print("Digite sua opção: ");
+                                dos = ler.nextInt();
+                                 switch (dos) {
+                                     case 1:
+                                         System.out.println("Digite o valor: ");
+                                         deposito = ler.nextDouble();
+                                         sistema.pegarCliente().getConta().depositar(deposito);
+                                         break;
+                                     case 2:
+                                         System.out.println("Digite o valor: ");
+                                         retirada = ler.nextDouble();
+                                         sistema.pegarCliente().getConta().retirada(retirada);
+                                         break;
 
-                    switch (caixa) {
-                        case 1:
-                            sistema.removerClientePrioritario();
-                            break;
-                        case 2:
-                            sistema.removerClientePrioritario();
-                            break;
-                        case 3:
-                            sistema.removerClientePrioritario();
-                            break;
-                        case 4:
-                            sistema.removerClientePrioritario();
-                            break;
-                        case 5:
-                            sistema.removerClientePrioritario();
-                            break;
-                        case 6:
-                            sistema.removerCliente();
-                            break;
+
+
+                                 }
+                                sistema.removerClientePrioritario();
+                                 break;
+                                }
+
+
+
+                    }else{
+                        System.out.println("Caixa invalido");
                     }
+                    break;
 
+                case 3:
+                    sistema.listar();
+                    break;
             }
         }while(opc != 0);
     }

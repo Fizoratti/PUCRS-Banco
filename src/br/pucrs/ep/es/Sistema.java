@@ -6,6 +6,8 @@ public class Sistema {
     private ArrayList<Cliente> clientePrioritario;
     private ArrayList<Cliente> cliente;
 
+
+
     public Sistema(){
         this.cliente = new ArrayList<Cliente>();
         this.clientePrioritario = new ArrayList<Cliente>();
@@ -20,9 +22,13 @@ public class Sistema {
         }
 
     }
+    public Cliente pegarCliente(){
+       return cliente.get(0);
+    }
 
     public void removerCliente(){
         if(!cliente.isEmpty()) {
+
             cliente.remove(0);
         }else{
             System.out.println("Não há clientes na fila");
@@ -31,25 +37,22 @@ public class Sistema {
 
     public void removerClientePrioritario() {
         if (!clientePrioritario.isEmpty()) {
+
             clientePrioritario.remove(0);
         } else {
             System.out.println("Não há clientes prioritarios!");
             if (!cliente.isEmpty()) {
+
                 cliente.remove(0);
             } else {
                 System.out.println("Não há clientes na fila");
             }
         }
     }
-    public void atenderClienteNormal(){
-
-
-    }
-
-
 
     public ArrayList<Cliente> listar(){
         return new ArrayList<>(cliente);
+
     }
 }
 
