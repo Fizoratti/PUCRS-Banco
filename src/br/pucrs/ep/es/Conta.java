@@ -30,6 +30,20 @@ public class Conta {
         this.categoria = categoria;
     }
 
+    public void upgradeConta(){
+        if(saldo >= 50000.00 && saldo < 200000.00){
+            setCategoria(Categoria.Gold);
+        }else if(saldo >= 200000.00){
+            setCategoria(Categoria.Platinum);
+        }else{
+            setCategoria(Categoria.Silver);
+        }
+    }
+
+    public void retrocedeConta(){
+        //tem que fazer
+    }
+
     public void calcularValorizacao() {
         if(categoria == Categoria.Silver) {
             this.valorizacao = 1.00;
