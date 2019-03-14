@@ -12,6 +12,7 @@ public class Main {
         do {
             System.out.println("1 - Registrar Cliente");
             System.out.println("2 - Escolher caixa");
+            System.out.print("Digite sua opção: ");
 
             // Scanner ler = new Scanner(System.in);
             opc = ler.nextInt();
@@ -25,16 +26,40 @@ public class Main {
                     int idade = ler.nextInt();
 
 
-                    sistema.colocarClienteNaFila(new Cliente(nome, idade), cont);
+                    sistema.colocarClienteNaFila(new Cliente(nome, idade));
 
                     System.out.println("Cliente registrado");
                     System.out.println(sistema.listar());
                     cont++;
                     break;
                 case 2:
-                    sistema.atenderClienteNormal();
-                    //System.out.println("selecione o caixa:");
-                    //int caixa = ler.nextInt();
+                    System.out.println("Caixa 1, Caixa 2, Caixa 3, Caixa 4, Caixa 5, Caixa 6");
+
+                    System.out.print("Escolha o caixa para o atendimento: ");
+
+                   int caixa = ler.nextInt();
+
+
+                    switch (caixa) {
+                        case 1:
+                            sistema.removerClientePrioritario();
+                            break;
+                        case 2:
+                            sistema.removerClientePrioritario();
+                            break;
+                        case 3:
+                            sistema.removerClientePrioritario();
+                            break;
+                        case 4:
+                            sistema.removerClientePrioritario();
+                            break;
+                        case 5:
+                            sistema.removerClientePrioritario();
+                            break;
+                        case 6:
+                            sistema.removerCliente();
+                            break;
+                    }
 
             }
         }while(opc != 0);

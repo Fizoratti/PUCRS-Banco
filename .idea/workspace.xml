@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa5f864e-27dd-4fcf-afc1-173ab74c76a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,26 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="48" />
+            <state relative-caret-position="756">
+              <caret line="59" column="53" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-              <folding>
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="646">
+              <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -59,8 +54,8 @@
         <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Cliente.java" />
         <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Conta.java" />
         <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Fila.java" />
-        <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java" />
         <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java" />
+        <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java" />
       </list>
     </option>
   </component>
@@ -104,7 +99,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552531510534" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552533471911" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -173,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552531543435</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="metodo para remover o cliente">
+      <created>1552531703076</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552531703076</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -183,7 +185,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2595949" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2595949" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -191,8 +193,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -221,7 +223,8 @@
     <MESSAGE value="classe fila" />
     <MESSAGE value="tudo que eu fiz até agora" />
     <MESSAGE value="retirei a classe fila, pois não vai ser preciso" />
-    <option name="LAST_COMMIT_MESSAGE" value="retirei a classe fila, pois não vai ser preciso" />
+    <MESSAGE value="metodo para remover o cliente" />
+    <option name="LAST_COMMIT_MESSAGE" value="metodo para remover o cliente" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Caixa.java">
@@ -270,23 +273,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="48" />
+        <state relative-caret-position="646">
+          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java">
+    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="756">
+          <caret line="59" column="53" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
         </state>
       </provider>
     </entry>

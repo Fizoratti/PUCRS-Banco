@@ -22,11 +22,24 @@ public class Sistema {
     }
 
     public void removerCliente(){
-        cliente.remove(0);
+        if(!cliente.isEmpty()) {
+            cliente.remove(0);
+        }else{
+            System.out.println("Não há clientes na fila");
+        }
     }
 
-    public void removerClientePrioritario(){
-        clientePrioritario.remove(0);
+    public void removerClientePrioritario() {
+        if (!clientePrioritario.isEmpty()) {
+            clientePrioritario.remove(0);
+        } else {
+            System.out.println("Não há clientes prioritarios!");
+            if (!cliente.isEmpty()) {
+                cliente.remove(0);
+            } else {
+                System.out.println("Não há clientes na fila");
+            }
+        }
     }
     public void atenderClienteNormal(){
 
@@ -39,3 +52,4 @@ public class Sistema {
         return new ArrayList<>(cliente);
     }
 }
+
