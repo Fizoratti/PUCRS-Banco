@@ -21,6 +21,13 @@ public class Sistema {
 
     }
 
+    public void removerCliente(){
+        cliente.remove(0);
+    }
+
+    public void removerClientePrioritario(){
+        clientePrioritario.remove(0);
+    }
     public void atenderClienteNormal(){
 
 
