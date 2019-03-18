@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Sistema sistema = new Sistema();
+
         CadastroContas cadastro = new CadastroContas();
+        Sistema sistema = new Sistema(cadastro);
         Banco banco = new Banco(cadastro);
 
 
@@ -46,8 +47,16 @@ public class Main {
                         cadastro.listarContas();
                     }
                     break;
+                case 3:
+                    System.out.println("Digite o nome do cliente: ");
+                    String cliente = ler.next();
+                    sistema.colocarClienteNaFila(cliente);
+                    break;
+                case 4:
+                    System.out.println("Escolha o caixa para o atendimento de 1 a 6 :");
+                    int escolhaCaixa = ler.nextInt();
 
-
+                    break;
             }
         }while(opc != 0);
     }
