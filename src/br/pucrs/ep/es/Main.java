@@ -14,7 +14,7 @@ public class Main {
 
         Scanner ler = new Scanner(System.in);
         int opc;
-       
+
 
         do {
             System.out.println("1 - Registrar Cliente");
