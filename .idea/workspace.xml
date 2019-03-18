@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa5f864e-27dd-4fcf-afc1-173ab74c76a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/pucrs/ep/es/Caixa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/pucrs/ep/es/CaixaPrioritario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/pucrs/ep/es/ContaMagica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/pucrs/ep/es/CadastroContas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/pucrs/ep/es/CadastroContas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java" afterDir="false" />
     </list>
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+            <state relative-caret-position="493">
+              <caret line="44" column="55" lean-forward="true" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -30,14 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="843">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="527">
+              <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -45,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Banco.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="537">
               <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
             </state>
           </provider>
@@ -54,8 +46,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/CadastroContas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="357">
+              <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+              <folding>
+                <element signature="e#857#858#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Conta.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
+            <state relative-caret-position="1530">
               <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
             </state>
           </provider>
@@ -100,9 +96,9 @@
         <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Fila.java" />
         <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Cliente.java" />
         <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Conta.java" />
-        <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/CadastroContas.java" />
         <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Banco.java" />
         <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java" />
+        <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/CadastroContas.java" />
         <option value="$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java" />
       </list>
     </option>
@@ -118,6 +114,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,24 +128,16 @@
               <item name="PUCRS-Banco" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PUCRS-Banco" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PUCRS-Banco" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="es" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552590537594" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552932171064" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -251,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552885894097</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="filas e atendimento no caixa">
+      <created>1552887232243</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1552887232243</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -261,7 +258,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13166311" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13272922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -270,7 +267,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -279,7 +276,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.20069204" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -335,7 +332,8 @@
     <MESSAGE value="metodo para upgrade na conta - há fazer ainda" />
     <MESSAGE value="criando a classe cadastro e banco, modificando as classes de acordo com o enunciado." />
     <MESSAGE value="atualizações" />
-    <option name="LAST_COMMIT_MESSAGE" value="atualizações" />
+    <MESSAGE value="filas e atendimento no caixa" />
+    <option name="LAST_COMMIT_MESSAGE" value="filas e atendimento no caixa" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Fila.java" />
@@ -346,35 +344,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/CaixaPrioritario.java">
+    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/CaixaPrioritario.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Caixa.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/ContaMagica.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Conta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#102#103#0" expanded="true" />
-            <element signature="e#125#126#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1530">
+          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Caixa.java">
+    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/ContaMagica.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        <state relative-caret-position="527">
+          <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/CadastroContas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="357">
+          <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+          <folding>
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -385,37 +379,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Conta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Banco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="537">
           <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Sistema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/pucrs/ep/es/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+        <state relative-caret-position="493">
+          <caret line="44" column="55" lean-forward="true" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
         </state>
       </provider>
     </entry>

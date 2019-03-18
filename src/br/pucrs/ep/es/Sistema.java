@@ -6,13 +6,15 @@ public class Sistema {
     private ArrayList<String> clientesNormal;
     private ArrayList<String> clientesPrioritarios;
     private CadastroContas cadastro;
+    private Banco banco;
 
 
 
-    public Sistema(CadastroContas cc){
+    public Sistema(CadastroContas cc, Banco banco){
         this.clientesNormal= new ArrayList<String>();
         this.clientesPrioritarios= new ArrayList<String>();
         this.cadastro = cc;
+        this.banco = banco;
 
     }
 
@@ -49,6 +51,19 @@ public class Sistema {
             clientesPrioritarios.remove(0);
         }else{
             System.out.println("Não há clientes na fila");
+        }
+    }
+
+
+    public void atenderClienteDaFilal(int numeroCaixa){
+        if(numeroCaixa == 6) {
+            banco.menu(cadastro.pesquisarConta(pegarClienteNormal()));
+            removerClienteNormal();
+        }else if(numeroCaixa >=1 && numeroCaixa<6){
+            banco.menu(cadastro.pesquisarConta(pegarClientePrioritario()));
+            removerClientePrioritario();
+        }else{
+            System.out.println("não há clientes na fila.");
         }
     }
 

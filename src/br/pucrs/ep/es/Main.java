@@ -7,20 +7,21 @@ public class Main {
     public static void main(String[] args) {
 
         CadastroContas cadastro = new CadastroContas();
-        Sistema sistema = new Sistema(cadastro);
         Banco banco = new Banco(cadastro);
+        Sistema sistema = new Sistema(cadastro,banco);
+
 
 
         Scanner ler = new Scanner(System.in);
         int opc;
-        int dos;
-        double retirada, deposito;
+       
 
         do {
             System.out.println("1 - Registrar Cliente");
-            System.out.println("2 - Atender Cliente direto");
-            System.out.println("3 - enviar cliente para fila");
-            System.out.println("4 - escolher caixa para o atendimento");
+            System.out.println("2 - Remover Cliente");
+            System.out.println("3 - Atender Cliente direto");
+            System.out.println("4 - enviar cliente para fila");
+            System.out.println("5 - escolher caixa para o atendimento");
             System.out.println("0 - sair");
             System.out.print("Digite sua opção: ");
 
@@ -38,6 +39,11 @@ public class Main {
                     System.out.println(cadastro.listarContas());
                     break;
                 case 2:
+                    System.out.println("Digite nome do cliente: ");
+                    String nomeCliente = ler.next();
+                    cadastro.removerConta(nomeCliente);
+                    break;
+                case 3:
                     System.out.println("Digite o nome do titular da conta: ");
                     String s = ler.next();
                     if(cadastro.pesquisarConta(s)!=null) {
@@ -47,15 +53,15 @@ public class Main {
                         cadastro.listarContas();
                     }
                     break;
-                case 3:
+                case 4:
                     System.out.println("Digite o nome do cliente: ");
                     String cliente = ler.next();
                     sistema.colocarClienteNaFila(cliente);
                     break;
-                case 4:
+                case 5:
                     System.out.println("Escolha o caixa para o atendimento de 1 a 6 :");
                     int escolhaCaixa = ler.nextInt();
-
+                    sistema.atenderClienteDaFilal(escolhaCaixa);
                     break;
             }
         }while(opc != 0);

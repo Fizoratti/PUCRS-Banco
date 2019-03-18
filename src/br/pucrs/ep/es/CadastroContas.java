@@ -29,6 +29,7 @@ public class CadastroContas {
             return null;
     }
 
+
     public ArrayList<Conta> listarContas(){
         return new ArrayList<>(contas);
     }
