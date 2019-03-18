@@ -6,6 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         Sistema sistema = new Sistema();
+        CadastroContas cadastro = new CadastroContas();
+        Banco banco = new Banco(cadastro);
+
 
         Scanner ler = new Scanner(System.in);
         int opc;
@@ -14,8 +17,9 @@ public class Main {
 
         do {
             System.out.println("1 - Registrar Cliente");
-            System.out.println("2 - Escolher caixa");
-            System.out.println("3 - Listar todos clientes já atendidos");
+            System.out.println("2 - Atender Cliente direto");
+            System.out.println("3 - enviar cliente para fila");
+            System.out.println("4 - escolher caixa para o atendimento");
             System.out.println("0 - sair");
             System.out.print("Digite sua opção: ");
 
@@ -25,80 +29,25 @@ public class Main {
 
             switch (opc) {
                 case 1:
-                    System.out.println("Digite seu nome: ");
+                    System.out.println("Digite nome: ");
                     String nome = ler.next();
-                    System.out.println("Digite sua idade: ");
+                    System.out.println("Digite idade: ");
                     int idade = ler.nextInt();
-
-
-                    sistema.colocarClienteNaFila(new Cliente(nome, idade));
-
-                    System.out.println("Cliente registrado");
-
-
+                    banco.criarConta(nome,idade);
+                    System.out.println(cadastro.listarContas());
                     break;
                 case 2:
-                    System.out.println("Caixa 1, Caixa 2, Caixa 3, Caixa 4, Caixa 5, Caixa 6");
-
-                    System.out.print("Escolha o caixa para o atendimento: ");
-
-                   int caixa = ler.nextInt();
-
-                    if(caixa > 0 && caixa <7 ) {
-                        switch (caixa) {
-                            case 6:
-                                System.out.println("1 - Depositar");
-                                System.out.println("2 - Sacar");
-                                System.out.print("Digite sua opção: ");
-                                dos = ler.nextInt();
-                                switch (dos) {
-                                    case 1:
-                                        System.out.println("Digite o valor: ");
-                                        deposito = ler.nextDouble();
-                                        sistema.pegarCliente().getConta().depositar(deposito);
-                                        break;
-                                    case 2:
-                                        System.out.println("Digite o valor: ");
-                                        retirada = ler.nextDouble();
-                                        sistema.pegarCliente().getConta().retirada(retirada);
-                                        break;
-                                }
-                                sistema.removerCliente();
-                                break;
-                            default:
-                                System.out.println("1 - Depositar");
-                                System.out.println("2 - Sacar");
-                                System.out.print("Digite sua opção: ");
-                                dos = ler.nextInt();
-                                 switch (dos) {
-                                     case 1:
-                                         System.out.println("Digite o valor: ");
-                                         deposito = ler.nextDouble();
-                                         sistema.pegarCliente().getConta().depositar(deposito);
-                                         break;
-                                     case 2:
-                                         System.out.println("Digite o valor: ");
-                                         retirada = ler.nextDouble();
-                                         sistema.pegarCliente().getConta().retirada(retirada);
-                                         break;
-
-
-
-                                 }
-                                sistema.removerClientePrioritario();
-                                 break;
-                                }
-
-
-
+                    System.out.println("Digite o nome do titular da conta: ");
+                    String s = ler.next();
+                    if(cadastro.pesquisarConta(s)!=null) {
+                        banco.menu(cadastro.pesquisarConta(s));
                     }else{
-                        System.out.println("Caixa invalido");
+                        System.out.println("Conta não cadastrada!");
+                        cadastro.listarContas();
                     }
                     break;
 
-                case 3:
-                    sistema.listar();
-                    break;
+
             }
         }while(opc != 0);
     }

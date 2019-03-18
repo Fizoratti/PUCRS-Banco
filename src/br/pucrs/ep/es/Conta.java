@@ -15,6 +15,8 @@ public class Conta {
         this.cliente = new Cliente(nome, idade);
     }
 
+
+
     public Cliente getCliente() {
         return cliente;
     }
@@ -91,7 +93,7 @@ public class Conta {
 
     @Override
     public String toString() {
-        return "Saldo: " + saldo + " Categoria: " + categoria + " Valorizção:" + valorizacao;
+        return "Cliente: "+cliente.getNome()+"Saldo: " + saldo + " Categoria: " + categoria + " Valorizção:" + valorizacao;
 
     }
 }

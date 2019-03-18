@@ -7,6 +7,7 @@ public class CadastroContas {
     private ArrayList<Conta> contas;
 
     public CadastroContas() {
+
         this.contas = new ArrayList<Conta>();
     }
 
@@ -20,7 +21,15 @@ public class CadastroContas {
     }
 
     public Conta pesquisarConta(String nomeTitular){
-        Conta c = contas.stream().filter(c->c.getCliente().getNome().equals(nomeTitular));
-        return c;
+        for(Conta c : contas){
+            if(c.getCliente().getNome().equals(nomeTitular)){
+                return c;
+            }
+        }
+            return null;
+    }
+
+    public ArrayList<Conta> listarContas(){
+        return new ArrayList<>(contas);
     }
 }
