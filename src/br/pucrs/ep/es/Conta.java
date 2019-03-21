@@ -22,28 +22,36 @@ public class Conta {
     }
 
     public double getSaldo() {
-        return saldo;
+        return this.saldo;
     }
 
     public void depositar(double valor) {
-        if(valor > 0) {
-            calcularValorizacao();
-            this.saldo += valor * this.valorizacao;
-            upgradeConta();
-        }else{
-            System.out.println("valor invalido");
+
+            if (valor > 0) {
+                calcularValorizacao();
+                this.saldo += valor * this.valorizacao;
+                upgradeConta();
+            }else{
+                throw new IllegalArgumentException();
+            }
         }
-    }
+
+
+
+
 
 
     public void retirada(double valor){
-        if(valor > saldo) {
-            saldo = saldo - valor;
+        if(getSaldo()>=valor) {
+            this.saldo -=  valor;
             retrocedeConta();
+
         }else{
-            System.out.println("valor indisponivel");
+            throw new IllegalArgumentException();
+
         }
     }
+
     public String getCategoria() {
         return categoria.toString();
     }
@@ -67,10 +75,9 @@ public class Conta {
     public void retrocedeConta(){
 
 
-        if(saldo < 10000.00 && getCategoria() == "Platinum"){
+        if(saldo < 100000.00 && getCategoria() == "Platinum"){
             setCategoria(Categoria.Gold);
-        }
-        if(saldo < 25000.00 && getCategoria()=="Gold"){
+        }else if(saldo < 25000.00 && getCategoria()=="Gold"){
             setCategoria(Categoria.Silver);
         }
         //tem que fazer

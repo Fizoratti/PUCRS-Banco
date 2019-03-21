@@ -16,8 +16,12 @@ public class CadastroContas {
     }
 
     public void removerConta(String nomeTitular){
-        //contas.remove(contas.stream().findAny().equals(nomeTitular));
-        contas.remove(contas.stream().filter(c->c.getCliente().getNome().equals(nomeTitular)));
+        for(Conta c : contas){
+            if(c.getCliente().getNome().equals(nomeTitular)){
+                contas.remove(c);
+            }
+        }
+
     }
 
     public Conta pesquisarConta(String nomeTitular){
@@ -29,6 +33,9 @@ public class CadastroContas {
             return null;
     }
 
+    public ArrayList<Conta> getContas() {
+        return contas;
+    }
 
     public ArrayList<Conta> listarContas(){
         return new ArrayList<>(contas);
